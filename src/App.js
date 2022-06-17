@@ -1,45 +1,29 @@
 import React from 'react';
 import './App.css';
+import Header from './Header';
+import Hero from './Hero';
+import GetHeader from './GetHeader';
 
-function Header() {
-  const header = [
-    {
-      title: 'Accueil',
-      url: './index.html'
-    },
-    {
-      title: 'À propos',
-      url: './index.html#about',
-    },
-    {
-      title: 'Portfolio'
-    }
-  ]
-  return(
 
+const App = () => {
+  
+  return (
+  <>
+    <div id='header'>
+      <img src={"./assets/Logo.svg"} alt="Logo Prisca" />
+      <ul className="no-dot-list">
+        {Header.map(item =>{
+          return (
+            <GetHeader key={item.id} title={item.title} url={item.url} />
+          );
+        })}
+      </ul>
+    </div>
+  
+    <Hero/>
+  </>
   )
 }
 
-const App = () => {
-
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-
-}
 
 export default App;
