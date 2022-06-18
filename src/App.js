@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './stylesheets/App.css';
 
 import GetHeader from './Header';
 import Hero from './Hero';
