@@ -22,26 +22,28 @@ const Header = [
 
 function GetHeader() {
     return(
-        <div id='header'>
-            <Navbar>
+        <header id='header' className='fixed-top'>
+            <Navbar sticky='top'>
                 <Container>
-                <Navbar.Brand> <img src={"./assets/Logo.svg"} alt="Logo Prisca" /> </Navbar.Brand>
+                    <Navbar.Brand> 
+                        <img src={"./assets/img/Logo.svg"} alt="Logo Prisca" height={100}/>
+                    </Navbar.Brand>
 
-                    <Nav className="me-auto">
+                    <Nav className="roboto-slab fw-bold">
 
                         {Header.map(item =>{
-                                return (
-                                <Nav.Link key={item.id} href={item.url}>
-                                    {item.title}
-                                </Nav.Link>
-                                );
+                            return (
+                            <Nav.Link key={item.id} href={item.url} className="text-white">
+                                {item.title}
+                            </Nav.Link>
+                            );
                         })}
 
                     </Nav>
 
                 </Container>
             </Navbar>
-        </div>
+        </header>
     )
 }
 
