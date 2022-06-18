@@ -1,0 +1,80 @@
+html {
+  scroll-behavior: smooth; /* scroll thumb and track */
+}
+
+body {
+  margin: auto;
+}
+
+.roboto-slab {
+  font-family: "Roboto Slab", serif;
+}
+
+.roboto {
+  font-family: Roboto, sans-serif;
+}
+
+.roboto-condensed {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.text-gray {
+  color: #4D4D4D;
+}
+
+.text-white {
+  color: white;
+}
+
+.navbar {
+  height: 100px;
+}
+
+#header {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0 2px, rgba(0, 0, 0, 0.3) 0 7px 5px -3px, rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+  background-color: #FF9898;
+}
+
+#header img {
+  padding: 0;
+}
+
+#hero {
+  background-color: #FF9898;
+  padding-top: 200px;
+  padding-bottom: 50px;
+}
+
+#hero h1 {
+  font-size: 36px;
+}
+
+#hero-contact img {
+  height: 35px;
+}
+
+#hero-recherche {
+  font-size: 30px;
+}
+
+.logiciel {
+  padding: 5px;
+  max-width: 401px;
+  max-height: 60px;
+  background-color: rgba(255, 255, 255, 0.92);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px, rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+}
+
+.logiciel img {
+  max-height: 40px;
+}
+
+/*# sourceMappingURL=App.css.map */

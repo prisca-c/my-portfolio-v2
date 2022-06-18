@@ -1,25 +1,50 @@
+import { Navbar } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
 
 const Header = [
     {
-        title: 'Accueil',
-        url: './index.html',
-        id: '0'
-    },
-    {
         title: 'À propos',
-        url: './index.html#about',
+        url: '#about',
         id: '1'
     },
     {
         title: 'Portfolio',
-        url: './index.html#portfolio',
+        url: '#portfolio',
         id: '2'
     },
     {
         title: 'Contact',
-        url: './index.html#contact',
+        url: '#contact',
         id: '3'
     }
 ]
 
-export default Header;
+function GetHeader() {
+    return(
+        <header id='header' className='fixed-top'>
+            <Navbar sticky='top'>
+                <Container>
+                    <Navbar.Brand> 
+                        <img src={"./assets/img/Logo.svg"} alt="Logo Prisca" height={100}/>
+                    </Navbar.Brand>
+
+                    <Nav className="roboto-slab fw-bold">
+
+                        {Header.map(item =>{
+                            return (
+                            <Nav.Link key={item.id} href={item.url} className="text-white">
+                                {item.title}
+                            </Nav.Link>
+                            );
+                        })}
+
+                    </Nav>
+
+                </Container>
+            </Navbar>
+        </header>
+    )
+}
+
+export default GetHeader;
