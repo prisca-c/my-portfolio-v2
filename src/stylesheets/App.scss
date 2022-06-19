@@ -1,5 +1,6 @@
 $primary-color: #FF9898;
 $secondary-color: #4D4D4D;
+$third-color: #FFCDA2 ;
 
 
 $roboto: Roboto, sans-serif;
@@ -12,6 +13,11 @@ html {
 
 body {
     margin: auto;
+}
+
+
+#root {
+    background-color: #FF9898;
 }
 
 .roboto-slab {
@@ -85,4 +91,67 @@ body {
 
 .logiciel img {
     max-height: 40px;
+}
+
+.tab-container {
+    width: 960px;
+    margin: auto;
+    background-color: $primary-color;
+    border-radius: 100%;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs button {
+    color: white;
+    cursor: pointer;
+    padding: 25px;
+    width: 30%;
+    margin: 0;
+    background: $secondary-color;
+    transition: all .5s ease-in-out;
+    border: none;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+
+.tabs button:hover {
+    color: white;
+}
+
+.tabs button:disabled {
+    background: linear-gradient(180deg, $primary-color 0%, $third-color 100%);
+    color: $secondary-color;
+    width: 100%;
+    margin-top: 0;
+}
+
+div.tabs img {
+    height: 25px;
+    color: white;
+    margin-right: 10px;
+}
+
+.title {
+    color: black;
+    font-size: medium;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.content {
+    margin-top: -2px;
+    padding: 50px 80px;
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.content, button {
+    font-size: 15px;
 }
