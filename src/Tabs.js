@@ -59,9 +59,9 @@ const Tabs = () => {
     
     ]
 
-    const [currentTab, setCurrentTab] = useState(1)
+    const [currentTab, setCurrentTab] = useState('1')
 
-    const handleClick = (e) => {
+    const handleTabClick = (e) => {
         setCurrentTab(e.target.id);
     }
 
@@ -69,12 +69,12 @@ const Tabs = () => {
         <div className="tab-container">
 
             <div className="tabs">
-                {ListTabs.map(tab =>
+                {ListTabs.map((tab, i) =>
                     <button 
-                        key={tab.id} 
+                        key={i} 
                         id={tab.id} 
                         disabled={currentTab === `${tab.id}`} 
-                        onClick={(handleClick)}
+                        onClick={(handleTabClick)}
                         className="roboto-slab"
                     >
                         {tab.image}{tab.tabTitle}
@@ -82,10 +82,11 @@ const Tabs = () => {
                 )}
             </div>
 
-            <div className="behind-content">
-                <div className='content'>
-                    {ListTabs.map(tab =>
-                        <div key={tab.id} disabled={currentTab === `${tab.id}`} >
+            <section className="behind-content" >
+                <div className='content' >
+                    {ListTabs.map((tab, i) =>
+                    
+                        <div key={i}>
                             {currentTab === `${tab.id}`
                             &&
                             <>
@@ -94,10 +95,10 @@ const Tabs = () => {
                             </>
                             }
                         </div>
+
                     )}
-                </div>
-            </div>
-            
+              </div>
+            </section>
         </div>
     )
 }

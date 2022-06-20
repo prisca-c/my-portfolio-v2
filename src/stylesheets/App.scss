@@ -108,19 +108,8 @@ body {
     padding: 2px;
     box-shadow: rgba(50, 50, 93, 0.501) 0px 0px 15px -15px inset, rgba(0, 0, 0, 0.472) 0px 0px 25px -18px inset;    
     border-radius: 50px;
-}
 
-.tabs {
     button {
-        path {
-            fill: white;
-            transition: all .5s ease-in-out;
-        }
-
-        h2 {
-            font-size: 20px;
-        }
-
         font-weight: 400;
         color: white;
         cursor: pointer;
@@ -132,28 +121,41 @@ body {
         border: none;
         border-radius: 50px;
         box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+
+        svg {
+            pointer-events: none;
+        }
+
+        path {
+            fill: white;
+            transition: all .5s ease-in-out;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
     }
 
     button:hover {
+        color: $primary-color;
+        width: 40%;
+        transition: all .5s ease-in-out;
+
         path {
             fill: $primary-color;
             transition: all .5s ease-in-out;
         }
-
-        color: $primary-color;
-        width: 40%;
-        transition: all .5s ease-in-out;
     }
 
     button:disabled {
-        path {
-            fill: $secondary-color;
-        }
-    
         background: linear-gradient(180deg, $primary-color 0%, $third-color 100%);
         color: $secondary-color;
         width: 80%;
         font-weight: bold;
+
+        path {
+            fill: $secondary-color;
+        }
     }
 }
 
@@ -182,15 +184,6 @@ div.tabs svg{
 }
 
 .content {
-    div.content-container{
-        height: O;
-        transition: all .5s ease-in-out;
-    }
-
-    div.content-container:disabled{
-        height: 500px;
-    }
-
     height: auto;
     margin: 10px;
     padding: 30px 40px;
@@ -209,10 +202,10 @@ div.tabs svg{
 }
 
 .hard-skills-icons {
+    max-width: 960px;
+
     img {
         max-height: 80px;
         margin: 15px;
     }
-    
-    max-width: 960px;
 }

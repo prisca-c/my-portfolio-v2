@@ -97,7 +97,6 @@ body {
   box-shadow: rgba(50, 50, 93, 0.501) 0px 0px 15px -15px inset, rgba(0, 0, 0, 0.472) 0px 0px 25px -18px inset;
   border-radius: 50px;
 }
-
 .tabs button {
   font-weight: 400;
   color: white;
@@ -110,6 +109,9 @@ body {
   border: none;
   border-radius: 50px;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.tabs button svg {
+  pointer-events: none;
 }
 .tabs button path {
   fill: white;
@@ -172,13 +174,6 @@ div.tabs svg {
   border-radius: 15px;
   background: linear-gradient(180deg, #FF9898 0%, #FFCDA2 100%);
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-}
-.content div.content-container {
-  height: O;
-  transition: all 0.5s ease-in-out;
-}
-.content div.content-container:disabled {
-  height: 500px;
 }
 
 .content, button {
