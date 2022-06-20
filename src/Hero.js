@@ -5,7 +5,7 @@ function Hero() {
 
     return (
 
-      <Container fluid id='hero' className='d-flex flex-row align-items-center ps-3 pe-3'>
+      <Container fluid id='hero' className='d-flex flex-row justify-content-around align-items-center ps-3 pe-3'>
 
         <Container fluid>
           <img src="./assets/img/Profile.png" alt="Profile" className='img-fluid' />

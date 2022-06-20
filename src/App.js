@@ -16,9 +16,7 @@ const App = () => {
       <ThemeProvider breakpoints={['lg', 'md', 'sm', 'xs']} >
 
         <GetHeader/>
-
           <Hero/>
-
           <Tabs/>
 
       </ThemeProvider> 

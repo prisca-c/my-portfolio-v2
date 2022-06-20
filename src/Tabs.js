@@ -6,9 +6,41 @@ const Tabs = () => {
         {
             id: 1,
             tabTitle: 'Hard Skills',
-            title: 'Hard Skills',
+            title: 'La boîte à outils',
             image: <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 181.424 126.936"><path d="M51.887,111.335a9.039,9.039,0,0,1-6.018-2.284L-.008,68.269l48.427-43.05A9.065,9.065,0,0,1,60.461,38.774L27.288,68.269,57.916,95.486a9.072,9.072,0,0,1-6.018,15.85Zm81.1-.017,48.427-43.05L135.538,27.486A9.065,9.065,0,0,0,123.5,41.04l30.628,27.228L120.952,97.752a9.068,9.068,0,0,0,12.036,13.566ZM90.579,124.164l18.133-108.8a9.063,9.063,0,1,0-17.878-2.986L72.7,121.178a9.066,9.066,0,0,0,7.452,10.438,9.616,9.616,0,0,0,1.5.119,9.068,9.068,0,0,0,8.931-7.571Z" transform="translate(.008 -4.8)"/></svg>,
-            content: '',
+            content: 
+                <div className="d-flex flex-column hard-skills-icons text-center">
+                    <p className="roboto text-gray"> 
+                        Depuis plusieurs années maintenant, j'ai pu apprendre de façon 
+                        autodidacte plusieurs logiciels, langages, frameworks ...
+                    </p>
+                    <div className="d-flex justify-content-around">
+                        <img alt="icone photoshop" title="Photoshop" src="assets/img/iconephotoshop.png"/>
+                        <img alt="icone illustrator" title="Illustrator" src="assets/img/iconeillustrator.png"/>
+                        <img alt="icone adobe XD" title="Adobe XD" src="assets/img/iconexd.png"/>
+                        <img alt="icone indesign" title="inDesign" src="assets/img/indesign.svg"/>
+                        <img alt="icone Premiere pro" title="Premiere Pro" src="assets/img/adobe-premiere-cc.svg" />
+                        <img alt="icone After Effect" title="After Effect" src="assets/img/after-effects.svg" />
+                    </div>
+                    
+                    <div className="d-flex justify-content-around">
+                        <img alt="icone HTML" title="HTML" src="assets/img/iconehtml.png" />
+                        <img alt="icone CSS" title="CSS" src="assets/img/iconecss.png" />
+                        <img alt="icone JavaScript" title="JavaScript" src="assets/img/javascript.svg" />
+                        <img alt="icone sass" title="Sass" src="assets/img/sass.svg" />
+                        <img alt="icone react" title="React" src="assets/img/react.svg" />
+                        <img alt="icone bootstrap" title="Bootstrap" src="assets/img/bootstrap.svg" />
+                    </div>
+                    
+                    <div className="d-flex justify-content-around">
+                        <img alt="icone wordpress" title="Wordpress" src="assets/img/wordpress.svg"/>
+                        <img alt="icone elementor" title="Elementor" src="assets/img/elementor.svg" />
+                        <img alt="icone php" title="PHP" src="assets/img/php.svg" />
+                        <img alt="icone git" title="Git" src="assets/img/git.svg" />
+                        <img alt="icone MySql" title="MySQL" src="assets/img/mysql.svg" />
+                        <img alt="icone visual studio code" title="Visual Studio Code" src="assets/img/visual-studio-code.svg" />
+                    </div>
+                </div>
         },
         {
             id: 2,
@@ -45,22 +77,25 @@ const Tabs = () => {
                         onClick={(handleClick)}
                         className="roboto-slab"
                     >
-                        {tab.image} {tab.tabTitle}
+                        {tab.image}{tab.tabTitle}
                     </button>
                 )}
             </div>
 
-            <div className='content'>
-                {ListTabs.map(tab =>
-                    <div key={tab.id}>
-                        {currentTab === `${tab.id}` 
-                        && 
-                        <div>
-                        <p className='title'> {tab.title}</p>
-                            <p>{tab.content}</p>
-                        </div>}
-                    </div>
-                )}
+            <div className="behind-content">
+                <div className='content'>
+                    {ListTabs.map(tab =>
+                        <div key={tab.id} disabled={currentTab === `${tab.id}`} >
+                            {currentTab === `${tab.id}`
+                            &&
+                            <>
+                                <h3 className='title'> {tab.title}</h3>
+                                {tab.content}
+                            </>
+                            }
+                        </div>
+                    )}
+                </div>
             </div>
             
         </div>

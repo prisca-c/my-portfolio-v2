@@ -94,7 +94,7 @@ body {
 }
 
 .tab-container {
-    width: 960px;
+    max-width: 960px;
     margin: auto;
     background-color: $primary-color;
     border-radius: 100%;
@@ -103,40 +103,58 @@ body {
 .tabs {
     display: flex;
     justify-content: space-between;
+    border: 2px solid #4D4D4D;
+    margin: 10px;
+    padding: 2px;
+    box-shadow: rgba(50, 50, 93, 0.501) 0px 0px 15px -15px inset, rgba(0, 0, 0, 0.472) 0px 0px 25px -18px inset;    
+    border-radius: 50px;
 }
 
-.tabs button {
-    path {
-        fill: white;
+.tabs {
+    button {
+        path {
+            fill: white;
+            transition: all .5s ease-in-out;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        font-weight: 400;
+        color: white;
+        cursor: pointer;
+        padding: 25px;
+        width: 30%;
+        margin: 5px;
+        background: $secondary-color;
+        transition: all .5s ease-in-out;
+        border: none;
+        border-radius: 50px;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    }
+
+    button:hover {
+        path {
+            fill: $primary-color;
+            transition: all .5s ease-in-out;
+        }
+
+        color: $primary-color;
+        width: 40%;
         transition: all .5s ease-in-out;
     }
 
-    font-weight: 400;
-    color: white;
-    cursor: pointer;
-    padding: 25px;
-    width: 30%;
-    margin: 0;
-    background: $secondary-color;
-    transition: all .5s ease-in-out;
-    border: none;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-}
-
-
-.tabs button:hover {
-    color: white;
-}
-
-.tabs button:disabled {
-    path {
-        fill: $secondary-color;
+    button:disabled {
+        path {
+            fill: $secondary-color;
+        }
+    
+        background: linear-gradient(180deg, $primary-color 0%, $third-color 100%);
+        color: $secondary-color;
+        width: 80%;
+        font-weight: bold;
     }
-    background: linear-gradient(180deg, $primary-color 0%, $third-color 100%);
-    color: $secondary-color;
-    width: 100%;
-    margin-top: 0;
-    font-weight: bold;
 }
 
 div.tabs svg{
@@ -146,22 +164,55 @@ div.tabs svg{
 }
 
 .title {
-    color: black;
+    color: $secondary-color;
+    font-family: $roboto;
+    text-align: center;
     font-size: medium;
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: 600;
+    text-transform: uppercase;
+}
+
+.behind-content {
+    margin: 10px;
+    border-radius: 20px;
+    border: 2px solid #4D4D4D;
+    box-shadow: rgba(50, 50, 93, 0.501) 0px 5px 30px -20px inset, rgba(0, 0, 0, 0.472) 0px 0px 25px -20px inset;
 }
 
 .content {
-    margin-top: -2px;
-    padding: 50px 80px;
+    div.content-container{
+        height: O;
+        transition: all .5s ease-in-out;
+    }
+
+    div.content-container:disabled{
+        height: 500px;
+    }
+
+    height: auto;
+    margin: 10px;
+    padding: 30px 40px;
     font-weight: 300;
     line-height: 30px;
     font-size: 16px;
     text-align: justify;
+    border-radius: 15px;
+    background: linear-gradient(180deg, $primary-color 0%, $third-color 100%);
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
+
 
 .content, button {
     font-size: 15px;
+}
+
+.hard-skills-icons {
+    img {
+        max-height: 80px;
+        margin: 15px;
+    }
+    
+    max-width: 960px;
 }
