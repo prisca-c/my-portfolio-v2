@@ -10,15 +10,15 @@ function Hero() {
         <Container fluid>
           <img src="./assets/img/Profile.png" alt="Profile" className='img-fluid' />
 
-            <div className="logiciel d-flex justify-content-around align-content-center align-items-center text-center mt-4">
-                <img alt="" src="./assets/img/iconehtml.png" />
-                <img alt="" src="./assets/img/iconecss.png" />
-                <img alt="" src="./assets/img/javascript.svg" />
-                <img alt="" src="./assets/img/sass.svg" />
-                <img alt="" src="./assets/img/bootstrap.svg" />
-                <img alt="" src="./assets/img/react.svg" />
-                <img alt="" src="./assets/img/wordpress.svg" />
-            </div>
+          <div className="logiciel d-none justify-content-around align-content-center align-items-center text-center mt-4">
+              <img alt="" src="./assets/img/iconehtml.png" />
+              <img alt="" src="./assets/img/iconecss.png" />
+              <img alt="" src="./assets/img/javascript.svg" />
+              <img alt="" src="./assets/img/sass.svg" />
+              <img alt="" src="./assets/img/bootstrap.svg" />
+              <img alt="" src="./assets/img/react.svg" />
+              <img alt="" src="./assets/img/wordpress.svg" />
+          </div>
         </Container>
 
         <div id='hero-info' className="text-gray">

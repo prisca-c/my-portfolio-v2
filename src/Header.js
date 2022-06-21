@@ -4,8 +4,8 @@ import { Nav } from 'react-bootstrap';
 
 const Header = [
     {
-        title: 'À propos',
-        url: '#about',
+        title: 'Compétences',
+        url: '#skills',
         id: '1'
     },
     {
