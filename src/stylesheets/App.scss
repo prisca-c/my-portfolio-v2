@@ -63,7 +63,7 @@ body {
 #hero {
     background-color: $primary-color;
     padding-top: 200px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 #hero h1 {
@@ -81,16 +81,17 @@ body {
 }
 
 .logiciel{
-    padding: 5px;
-    max-width: 401px;
-    max-height: 60px;
+    padding: 10px;
+    width: 401px;
+    height: 60px;
     background-color: rgba(255, 255, 255, 0.92);
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px, rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
 }
 
 .logiciel img {
-    max-height: 40px;
+    max-width:100%;
+    max-height:100%;
 }
 
 .tab-container {
@@ -114,7 +115,7 @@ body {
         color: white;
         cursor: pointer;
         padding: 25px;
-        width: 30%;
+        width: 40%;
         margin: 5px;
         background: $secondary-color;
         transition: all .5s ease-in-out;
@@ -138,7 +139,7 @@ body {
 
     button:hover {
         color: $primary-color;
-        width: 40%;
+        width: 50%;
         transition: all .5s ease-in-out;
 
         path {
@@ -186,7 +187,7 @@ div.tabs svg{
 .content {
     height: auto;
     margin: 10px;
-    padding: 30px 40px;
+    padding: 30px;
     font-weight: 300;
     line-height: 30px;
     font-size: 16px;
@@ -195,7 +196,6 @@ div.tabs svg{
     background: linear-gradient(180deg, $primary-color 0%, $third-color 100%);
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
-
 
 .content, button {
     font-size: 15px;
@@ -207,5 +207,33 @@ div.tabs svg{
     img {
         max-height: 80px;
         margin: 15px;
+    }
+}
+
+#soft-skills {
+    font-family: $roboto;
+
+        p {
+            color: #4D4D4D;
+        }
+    
+    #info-soft-skills {
+        margin: 50px auto;
+    }
+
+    #list-soft-skills {
+
+        div {
+            margin: 10px auto;
+
+            img {
+                height: 60px;
+                margin-bottom: 15px;
+            }
+
+            p {
+               font-weight: 600; 
+            }
+        }
     }
 }
