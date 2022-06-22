@@ -157,8 +157,7 @@ body {
         path {
             fill: $secondary-color;
         }
-    }
-}
+}}
 
 div.tabs svg{
     height: 25px;
@@ -234,6 +233,30 @@ div.tabs svg{
             p {
                font-weight: 600; 
             }
+}}}
+
+#setup  {
+    margin: 50px 50px;
+
+    .container-setup{
+        margin: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+        img {
+            height: 50px;
+            margin: 0 15px;
         }
-    }
-}
+
+        .vertical-center-margin {
+            margin: 20px;
+        }
+
+        #first-environment {
+            @media screen and (max-width: 768px){
+                margin: 15px auto;
+
+                div {
+                    margin: 5px 0;
+                }
+}}}}
+

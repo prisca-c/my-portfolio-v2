@@ -209,4 +209,27 @@ div.tabs svg {
   font-weight: 600;
 }
 
+#setup {
+  margin: 50px 50px;
+}
+#setup .container-setup {
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+#setup .container-setup img {
+  height: 50px;
+  margin: 0 15px;
+}
+#setup .container-setup .vertical-center-margin {
+  margin: 20px;
+}
+@media screen and (max-width: 768px) {
+  #setup .container-setup #first-environment {
+    margin: 15px auto;
+  }
+  #setup .container-setup #first-environment div {
+    margin: 5px 0;
+  }
+}
+
 /*# sourceMappingURL=App.css.map */
