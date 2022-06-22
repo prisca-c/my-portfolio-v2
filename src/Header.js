@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Navbar } from 'react-bootstrap';
 import { Container } from 'react-bootstrap';
 import { Nav } from 'react-bootstrap';
@@ -5,7 +6,7 @@ import { Nav } from 'react-bootstrap';
 const Header = [
     {
         title: 'Compétences',
-        url: '#skills',
+        url: '/tabs',
         id: '1'
     },
     {
@@ -26,16 +27,18 @@ function GetHeader() {
             <Navbar sticky='top'>
                 <Container>
                     <Navbar.Brand> 
-                        <img src={"./assets/img/Logo.svg"} alt="Logo Prisca" height={100}/>
+                        <Link to="/">
+                            <img src={"./assets/img/Logo.svg"} alt="Logo Prisca" height={100}/>
+                        </Link>
                     </Navbar.Brand>
 
                     <Nav className="roboto-slab fw-bold">
 
                         {Header.map(item =>{
                             return (
-                            <Nav.Link key={item.id} href={item.url} className="text-white">
+                            <Link key={item.id} to={item.url} className="text-white">
                                 {item.title}
-                            </Nav.Link>
+                            </Link>
                             );
                         })}
 
