@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import GetHeader from './Header';
 import Hero from './Hero';
 import Tabs from './Tabs';
+import Setup from './Setup';
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         <GetHeader/>
           <Hero/>
           <Tabs/>
+          <Setup/>
 
       </ThemeProvider> 
      
