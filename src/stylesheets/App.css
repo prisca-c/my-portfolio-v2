@@ -57,35 +57,17 @@ body {
 }
 
 #hero {
-  background-color: #FF9898;
   padding-top: 200px;
   padding-bottom: 100px;
 }
-
 #hero h1 {
   font-size: 36px;
 }
-
-#hero-contact img {
+#hero #hero-contact img {
   height: 35px;
 }
-
-#hero-recherche {
+#hero #hero-recherche {
   font-size: 30px;
-}
-
-.logiciel {
-  padding: 10px;
-  width: 401px;
-  height: 60px;
-  background-color: rgba(255, 255, 255, 0.92);
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px, rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
-}
-
-.logiciel img {
-  max-width: 100%;
-  max-height: 100%;
 }
 
 .tab-container {
@@ -94,8 +76,7 @@ body {
   background-color: #FF9898;
   border-radius: 100%;
 }
-
-.tabs {
+.tab-container .tabs {
   display: flex;
   justify-content: space-between;
   border: 2px solid #4D4D4D;
@@ -104,7 +85,7 @@ body {
   box-shadow: rgba(50, 50, 93, 0.501) 0px 0px 15px -15px inset, rgba(0, 0, 0, 0.472) 0px 0px 25px -18px inset;
   border-radius: 50px;
 }
-.tabs button {
+.tab-container .tabs button {
   font-weight: 400;
   color: white;
   cursor: pointer;
@@ -117,60 +98,47 @@ body {
   border-radius: 50px;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
-.tabs button svg {
-  pointer-events: none;
-}
-.tabs button path {
-  fill: white;
-  transition: all 0.5s ease-in-out;
-}
-.tabs button h2 {
-  font-size: 20px;
-}
-.tabs button:hover {
+.tab-container .tabs button:hover {
   color: #FF9898;
   width: 50%;
   transition: all 0.5s ease-in-out;
 }
-.tabs button:hover path {
+.tab-container .tabs button:hover path {
   fill: #FF9898;
   transition: all 0.5s ease-in-out;
 }
-.tabs button:disabled {
+.tab-container .tabs button:disabled {
   background: linear-gradient(180deg, #FF9898 0%, #FFCDA2 100%);
   color: #4D4D4D;
   width: 80%;
   font-weight: bold;
 }
-.tabs button:disabled path {
+.tab-container .tabs button:disabled path {
   fill: #4D4D4D;
 }
-
-div.tabs svg {
+.tab-container .tabs button svg {
+  pointer-events: none;
   height: 25px;
   margin-right: 10px;
   transition: all 0.5s ease-in-out;
 }
-
-.title {
-  color: #4D4D4D;
-  font-family: Roboto, sans-serif;
-  text-align: center;
-  font-size: medium;
-  margin-bottom: 20px;
-  font-size: 20px;
-  font-weight: 600;
-  text-transform: uppercase;
+.tab-container .tabs button path {
+  fill: white;
+  transition: all 0.5s ease-in-out;
 }
-
-.behind-content {
+.tab-container .tabs button h2 {
+  font-size: 20px;
+}
+.tab-container .behind-tab-content {
   margin: 10px;
   border-radius: 20px;
   border: 2px solid #4D4D4D;
   box-shadow: rgba(50, 50, 93, 0.501) 0px 5px 30px -20px inset, rgba(0, 0, 0, 0.472) 0px 0px 25px -20px inset;
 }
-
-.content {
+.tab-container .behind-tab-content .tab-content, .tab-container .behind-tab-content button {
+  font-size: 15px;
+}
+.tab-container .behind-tab-content .tab-content {
   height: auto;
   margin: 10px;
   padding: 30px;
@@ -182,36 +150,40 @@ div.tabs svg {
   background: linear-gradient(180deg, #FF9898 0%, #FFCDA2 100%);
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
-
-.content, button {
-  font-size: 15px;
+.tab-container .behind-tab-content .tab-content .title {
+  color: #4D4D4D;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  font-size: medium;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
-
-.hard-skills-icons {
+.tab-container .behind-tab-content .tab-content .hard-skills-icons {
   max-width: 960px;
 }
-.hard-skills-icons img {
+.tab-container .behind-tab-content .tab-content .hard-skills-icons img {
   max-height: 80px;
   margin: 15px;
 }
-
-#soft-skills {
+.tab-container .behind-tab-content .tab-content #soft-skills {
   font-family: Roboto, sans-serif;
 }
-#soft-skills p {
+.tab-container .behind-tab-content .tab-content #soft-skills p {
   color: #4D4D4D;
 }
-#soft-skills #info-soft-skills {
+.tab-container .behind-tab-content .tab-content #soft-skills #info-soft-skills {
   margin: 50px auto;
 }
-#soft-skills #list-soft-skills div {
+.tab-container .behind-tab-content .tab-content #soft-skills #list-soft-skills div {
   margin: 10px auto;
 }
-#soft-skills #list-soft-skills div img {
+.tab-container .behind-tab-content .tab-content #soft-skills #list-soft-skills div img {
   height: 60px;
   margin-bottom: 15px;
 }
-#soft-skills #list-soft-skills div p {
+.tab-container .behind-tab-content .tab-content #soft-skills #list-soft-skills div p {
   font-weight: 600;
 }
 

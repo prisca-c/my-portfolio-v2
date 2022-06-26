@@ -124,8 +124,8 @@ const Tabs = () => {
                 )}
             </div>
 
-            <section className="behind-content" >
-                <div className='content' >
+            <section className="behind-tab-content" >
+                <div className='tab-content' >
                     {ListTabs.map((tab, i) =>
                     
                         <div key={i}>
