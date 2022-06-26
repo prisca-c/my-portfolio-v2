@@ -15,7 +15,6 @@ body {
     margin: auto;
 }
 
-
 #root {
     background-color: #FF9898;
     margin: auto;
@@ -60,20 +59,37 @@ body {
         padding: 0;
     }
 
-    .navbar-expand .navbar-nav .dropdown-menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    a {
+        text-decoration: none;
     }
-    
+
+    .item-container {
+        text-align: right !important;
+
+        @media screen and (min-width: 992px){
+            display: flex;
+            justify-content: flex-end;
+            }
+
+        .item-list {
+            gap: 10px;
+        }
+    }
 }
 
 #hero {
     padding-top: 200px;
     padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 
     h1 {
         font-size: 36px;
+    }
+
+    #hero-info {
+        max-width: 650px;
     }
 
     #hero-contact img {
@@ -93,13 +109,13 @@ body {
     border-radius: 100%;
 
     .tabs {
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid #4D4D4D;
-    margin: 10px;
-    padding: 2px;
-    box-shadow: rgba(50, 50, 93, 0.501) 0px 0px 15px -15px inset, rgba(0, 0, 0, 0.472) 0px 0px 25px -18px inset;    
-    border-radius: 50px;
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid #4D4D4D;
+        margin: 10px;
+        padding: 2px;
+        box-shadow: rgba(50, 50, 93, 0.501) 0px 0px 15px -15px inset, rgba(0, 0, 0, 0.472) 0px 0px 25px -18px inset;    
+        border-radius: 50px;
 
         button {
             font-weight: 400;
@@ -228,6 +244,10 @@ body {
 #setup  {
     max-width: 960px;
     margin: 50px auto;
+
+    @media screen and (max-width: 1300px) {
+        max-width: 90%;
+    }
 
     .container-setup{
         margin: 10px;

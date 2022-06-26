@@ -34,8 +34,8 @@ function GetHeader() {
             </Navbar.Brand>
 
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="roboto-slab fw-bold">
+            <Navbar.Collapse id="basic-navbar-nav" className="item-container">
+                <Nav className="item-list roboto-slab fw-bold">
                         {Header.map(item =>{
                             return (
                                 <Link key={item.id} to={item.url} className="text-gray">
