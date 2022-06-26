@@ -10,12 +10,10 @@ import reportWebVitals from './reportWebVitals';
 
 import App from './App';
 import Tabs from './Tabs';
-import GetHeader from './Header';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-  <GetHeader/>
 
     <Routes>
       <Route path="/" element={<App />} />
