@@ -18,6 +18,7 @@ body {
 
 #root {
     background-color: #FF9898;
+    margin: auto;
 }
 
 .roboto-slab {
@@ -40,24 +41,31 @@ body {
     color: white;
 }
 
-.navbar {
-    height: 100px;
-}
-
-#header {
+#navbar {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
     padding-right: 20px;
     padding-left: 20px;
-    border-radius: 50px;
+    border-radius: 80px;
     box-shadow: rgba(0, 0, 0, 0.4) 0 0 2px, rgba(0, 0, 0, 0.3) 0 7px 5px -3px, rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
     background-color: $primary-color;
-}
 
-#header img {
-    padding: 0;
+    @media screen and (max-width: 768px) {
+        width: 80%;
+    }
+
+    img {
+        padding: 0;
+    }
+
+    .navbar-expand .navbar-nav .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
 
 #hero {
@@ -236,11 +244,16 @@ div.tabs svg{
 }}}
 
 #setup  {
-    margin: 50px 50px;
+    max-width: 960px;
+    margin: 50px auto;
 
     .container-setup{
         margin: 10px;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+        @media screen and (max-width: 767px) {
+            margin: auto;
+        }
 
         img {
             height: 50px;
@@ -252,7 +265,7 @@ div.tabs svg{
         }
 
         #first-environment {
-            @media screen and (max-width: 768px){
+            @media screen and (max-width: 767px){
                 margin: 15px auto;
 
                 div {
