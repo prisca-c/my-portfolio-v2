@@ -14,6 +14,7 @@ const App = () => {
   
   return (
     <> 
+    <React.StrictMode>
       <ThemeProvider breakpoints={['lg', 'md', 'sm', 'xs']} >
 
         <GetHeader/>
@@ -22,7 +23,7 @@ const App = () => {
           <Setup/>
 
       </ThemeProvider> 
-     
+    </React.StrictMode> 
     </>
   )
 }
