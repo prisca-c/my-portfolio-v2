@@ -7,7 +7,7 @@ body {
 }
 
 #root {
-  background-color: #FF9898;
+  background-color: #ff9898;
   margin: auto;
 }
 
@@ -24,7 +24,7 @@ body {
 }
 
 .text-gray {
-  color: #4D4D4D;
+  color: #4d4d4d;
 }
 
 .text-white {
@@ -40,14 +40,14 @@ body {
   padding-left: 20px;
   border-radius: 80px;
   box-shadow: rgba(0, 0, 0, 0.4) 0 0 2px, rgba(0, 0, 0, 0.3) 0 7px 5px -3px, rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
-  background-color: #FF9898;
+  background-color: #ff9898;
 }
 @media screen and (max-width: 768px) {
   #navbar {
     width: 80%;
   }
   #navbar button {
-    border: 2px solid #4D4D4D;
+    border: 2px solid #4d4d4d;
   }
 }
 #navbar img {
@@ -61,7 +61,7 @@ body {
 }
 #navbar a:hover {
   text-decoration: none;
-  color: #4D4D4D;
+  color: #4d4d4d;
   font-size: 110%;
 }
 #navbar .item-container {
@@ -101,13 +101,13 @@ body {
 .tab-container {
   max-width: 960px;
   margin: auto;
-  background-color: #FF9898;
+  background-color: #ff9898;
   border-radius: 100%;
 }
 .tab-container .tabs {
   display: flex;
   justify-content: space-between;
-  border: 2px solid #4D4D4D;
+  border: 2px solid #4d4d4d;
   margin: 10px;
   padding: 2px;
   box-shadow: rgba(50, 50, 93, 0.501) 0px 0px 15px -15px inset, rgba(0, 0, 0, 0.472) 0px 0px 25px -18px inset;
@@ -120,29 +120,29 @@ body {
   padding: 25px;
   width: 40%;
   margin: 5px;
-  background: #4D4D4D;
+  background: #4d4d4d;
   transition: all 0.5s ease-in-out;
   border: none;
   border-radius: 50px;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 .tab-container .tabs button:hover {
-  color: #FF9898;
+  color: #ff9898;
   width: 50%;
   transition: all 0.5s ease-in-out;
 }
 .tab-container .tabs button:hover path {
-  fill: #FF9898;
+  fill: #ff9898;
   transition: all 0.5s ease-in-out;
 }
 .tab-container .tabs button:disabled {
-  background: linear-gradient(180deg, #FF9898 0%, #FFCDA2 100%);
-  color: #4D4D4D;
+  background: linear-gradient(180deg, #ff9898 0%, #ffcda2 100%);
+  color: #4d4d4d;
   width: 80%;
   font-weight: bold;
 }
 .tab-container .tabs button:disabled path {
-  fill: #4D4D4D;
+  fill: #4d4d4d;
 }
 .tab-container .tabs button svg {
   pointer-events: none;
@@ -160,10 +160,11 @@ body {
 .tab-container .behind-tab-content {
   margin: 10px;
   border-radius: 20px;
-  border: 2px solid #4D4D4D;
+  border: 2px solid #4d4d4d;
   box-shadow: rgba(50, 50, 93, 0.501) 0px 5px 30px -20px inset, rgba(0, 0, 0, 0.472) 0px 0px 25px -20px inset;
 }
-.tab-container .behind-tab-content .tab-content, .tab-container .behind-tab-content button {
+.tab-container .behind-tab-content .tab-content,
+.tab-container .behind-tab-content button {
   font-size: 15px;
 }
 .tab-container .behind-tab-content .tab-content {
@@ -175,11 +176,11 @@ body {
   font-size: 16px;
   text-align: justify;
   border-radius: 15px;
-  background: linear-gradient(180deg, #FF9898 0%, #FFCDA2 100%);
+  background: linear-gradient(180deg, #ff9898 0%, #ffcda2 100%);
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 .tab-container .behind-tab-content .tab-content .title {
-  color: #4D4D4D;
+  color: #4d4d4d;
   font-family: Roboto, sans-serif;
   text-align: center;
   margin-bottom: 20px;
@@ -198,7 +199,7 @@ body {
   font-family: Roboto, sans-serif;
 }
 .tab-container .behind-tab-content .tab-content #soft-skills p {
-  color: #4D4D4D;
+  color: #4d4d4d;
 }
 .tab-container .behind-tab-content .tab-content #soft-skills #info-soft-skills {
   margin: 50px auto;
@@ -218,7 +219,7 @@ body {
   font-family: Roboto, sans-serif;
   max-width: 960px;
   margin: 50px auto;
-  color: #4D4D4D;
+  color: #4d4d4d;
 }
 @media screen and (max-width: 1300px) {
   #setup {
@@ -228,7 +229,9 @@ body {
 #setup h2 {
   font-size: 25px;
 }
-#setup h2, #setup h3, #setup p {
+#setup h2,
+#setup h3,
+#setup p {
   margin: 0;
 }
 #setup .container-setup {

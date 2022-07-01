@@ -9,24 +9,19 @@ import Hero from './Hero';
 import Tabs from './Tabs';
 import Setup from './Setup';
 
-
 const App = () => {
-  
   return (
-    <> 
-    <React.StrictMode>
-      <ThemeProvider breakpoints={['lg', 'md', 'sm', 'xs']} >
-
-        <GetHeader/>
-          <Hero/>
-          <Tabs/>
-          <Setup/>
-
-      </ThemeProvider> 
-    </React.StrictMode> 
+    <>
+      <React.StrictMode>
+        <ThemeProvider breakpoints={['lg', 'md', 'sm', 'xs']}>
+          <GetHeader />
+          <Hero />
+          <Tabs />
+          <Setup />
+        </ThemeProvider>
+      </React.StrictMode>
     </>
-  )
-}
-
+  );
+};
 
 export default App;

@@ -1,305 +1,307 @@
-$primary-color: #FF9898;
-$secondary-color: #4D4D4D;
-$third-color: #FFCDA2 ;
-
+$primary-color: #ff9898;
+$secondary-color: #4d4d4d;
+$third-color: #ffcda2;
 
 $roboto: Roboto, sans-serif;
-$roboto-condensed: "Roboto Condensed", sans-serif;
-$roboto-slab: "Roboto Slab", serif;
+$roboto-condensed: 'Roboto Condensed', sans-serif;
+$roboto-slab: 'Roboto Slab', serif;
 
 html {
-    scroll-behavior: smooth; /* scroll thumb and track */
+  scroll-behavior: smooth; /* scroll thumb and track */
 }
 
 body {
-    margin: auto;
+  margin: auto;
 }
 
 #root {
-    background-color: #FF9898;
-    margin: auto;
+  background-color: #ff9898;
+  margin: auto;
 }
 
 .roboto-slab {
-    font-family: $roboto-slab;
+  font-family: $roboto-slab;
 }
 
 .roboto {
-    font-family: $roboto;
+  font-family: $roboto;
 }
 
 .roboto-condensed {
-    font-family: $roboto-condensed;
+  font-family: $roboto-condensed;
 }
 
 .text-gray {
-    color: $secondary-color;
+  color: $secondary-color;
 }
 
 .text-white {
-    color: white;
+  color: white;
 }
 
 #navbar {
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 800px;
-    padding-right: 20px;
-    padding-left: 20px;
-    border-radius: 80px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0 0 2px, rgba(0, 0, 0, 0.3) 0 7px 5px -3px, rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
-    background-color: $primary-color;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 80px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0 2px, rgba(0, 0, 0, 0.3) 0 7px 5px -3px,
+    rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+  background-color: $primary-color;
 
-    @media screen and (max-width: 768px) {
-        width: 80%;
+  @media screen and (max-width: 768px) {
+    width: 80%;
 
-        button {
-            border: 2px solid #4D4D4D;
-        }
+    button {
+      border: 2px solid #4d4d4d;
+    }
+  }
+
+  img {
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease-in-out;
+    font-size: 100%;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: $secondary-color;
+    font-size: 110%;
+  }
+
+  .item-container {
+    text-align: right !important;
+
+    @media screen and (min-width: 992px) {
+      display: flex;
+      justify-content: flex-end;
     }
 
-    img {
-        padding: 0;
+    .item-list {
+      gap: 20px;
     }
-
-    a {
-        text-decoration: none;
-        color: white;
-        transition: all .5s ease-in-out;
-        font-size: 100%;
-    }
-
-    a:hover {
-        text-decoration: none;
-        color: $secondary-color;
-        font-size: 110%;
-    }
-
-    .item-container {
-        text-align: right !important;
-
-        @media screen and (min-width: 992px){
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .item-list {
-            gap: 20px;
-        }
-    }
+  }
 }
 
 #hero {
-    padding-top: 200px;
-    padding-bottom: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
 
-    h1 {
-        font-size: 36px;
-    }
+  h1 {
+    font-size: 36px;
+  }
 
-    #hero-info {
-        max-width: 650px;
-    }
+  #hero-info {
+    max-width: 650px;
+  }
 
-    #hero-contact img {
-        height: 35px;
-    
-    }
+  #hero-contact img {
+    height: 35px;
+  }
 
-    #hero-recherche {
-        font-size: 30px;
-    }
+  #hero-recherche {
+    font-size: 30px;
+  }
 }
 
 .tab-container {
-    max-width: 960px;
-    margin: auto;
-    background-color: $primary-color;
-    border-radius: 100%;
+  max-width: 960px;
+  margin: auto;
+  background-color: $primary-color;
+  border-radius: 100%;
 
-    .tabs {
-        display: flex;
-        justify-content: space-between;
-        border: 2px solid #4D4D4D;
-        margin: 10px;
-        padding: 2px;
-        box-shadow: rgba(50, 50, 93, 0.501) 0px 0px 15px -15px inset, rgba(0, 0, 0, 0.472) 0px 0px 25px -18px inset;    
-        border-radius: 50px;
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #4d4d4d;
+    margin: 10px;
+    padding: 2px;
+    box-shadow: rgba(50, 50, 93, 0.501) 0px 0px 15px -15px inset,
+      rgba(0, 0, 0, 0.472) 0px 0px 25px -18px inset;
+    border-radius: 50px;
 
-        button {
-            font-weight: 400;
-            color: white;
-            cursor: pointer;
-            padding: 25px;
-            width: 40%;
-            margin: 5px;
-            background: $secondary-color;
-            transition: all .5s ease-in-out;
-            border: none;
-            border-radius: 50px;
-            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    button {
+      font-weight: 400;
+      color: white;
+      cursor: pointer;
+      padding: 25px;
+      width: 40%;
+      margin: 5px;
+      background: $secondary-color;
+      transition: all 0.5s ease-in-out;
+      border: none;
+      border-radius: 50px;
+      box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 
-            &:hover {
-                color: $primary-color;
-                width: 50%;
-                transition: all .5s ease-in-out;
-    
-                path {
-                    fill: $primary-color;
-                    transition: all .5s ease-in-out;
-                }
-            }
-    
-            &:disabled {
-                background: linear-gradient(180deg, $primary-color 0%, $third-color 100%);
-                color: $secondary-color;
-                width: 80%;
-                font-weight: bold;
-    
-                path {
-                    fill: $secondary-color;
-                }
-            }
+      &:hover {
+        color: $primary-color;
+        width: 50%;
+        transition: all 0.5s ease-in-out;
 
-            svg {
-                pointer-events: none;
-                height: 25px;
-                margin-right: 10px;
-                transition: all .5s ease-in-out;
-            }
-
-            path {
-                fill: white;
-                transition: all .5s ease-in-out;
-            }
-
-            h2 {
-                font-size: 25px;
-            }
+        path {
+          fill: $primary-color;
+          transition: all 0.5s ease-in-out;
         }
-    }
-    
-    .behind-tab-content {
-        margin: 10px;
-        border-radius: 20px;
-        border: 2px solid #4D4D4D;
-        box-shadow: rgba(50, 50, 93, 0.501) 0px 5px 30px -20px inset, rgba(0, 0, 0, 0.472) 0px 0px 25px -20px inset;
+      }
 
-        .tab-content, button {
-            font-size: 15px;
+      &:disabled {
+        background: linear-gradient(180deg, $primary-color 0%, $third-color 100%);
+        color: $secondary-color;
+        width: 80%;
+        font-weight: bold;
+
+        path {
+          fill: $secondary-color;
         }
+      }
 
-        .tab-content {
-            height: auto;
-            margin: 10px;
-            padding: 30px;
-            font-weight: 300;
-            line-height: 30px;
-            font-size: 16px;
-            text-align: justify;
-            border-radius: 15px;
-            background: linear-gradient(180deg, $primary-color 0%, $third-color 100%);
-            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+      svg {
+        pointer-events: none;
+        height: 25px;
+        margin-right: 10px;
+        transition: all 0.5s ease-in-out;
+      }
 
-            .title {
-                color: $secondary-color;
-                font-family: $roboto;
-                text-align: center;
-                margin-bottom: 20px;
-                font-size: 25px;
-                font-weight: 600;
-                text-transform: uppercase;
-            }
+      path {
+        fill: white;
+        transition: all 0.5s ease-in-out;
+      }
 
-            .hard-skills-icons {
-                max-width: 960px;
-            
-                img {
-                    max-height: 80px;
-                    margin: 15px;
-                }
-            }
-
-            #soft-skills {
-                font-family: $roboto;
-            
-                    p {
-                        color: #4D4D4D;
-                    }
-                
-                #info-soft-skills {
-                    margin: 50px auto;
-                }
-            
-                #list-soft-skills {
-            
-                    div {
-                        margin: 10px auto;
-            
-                        img {
-                            height: 60px;
-                            margin-bottom: 15px;
-                        }
-            
-                        p {
-                        font-weight: 600; 
-                        }
-                    }
-                }
-    }}}
-}
-
-#setup  {
-    font-family: $roboto;
-    max-width: 960px;
-    margin: 50px auto;
-    color: $secondary-color;
-
-    @media screen and (max-width: 1300px) {
-        max-width: 90%;
-    }
-
-
-    h2 {
+      h2 {
         font-size: 25px;
+      }
+    }
+  }
+
+  .behind-tab-content {
+    margin: 10px;
+    border-radius: 20px;
+    border: 2px solid #4d4d4d;
+    box-shadow: rgba(50, 50, 93, 0.501) 0px 5px 30px -20px inset,
+      rgba(0, 0, 0, 0.472) 0px 0px 25px -20px inset;
+
+    .tab-content,
+    button {
+      font-size: 15px;
     }
 
-    h2, h3, p {
-        margin: 0;
-    }
+    .tab-content {
+      height: auto;
+      margin: 10px;
+      padding: 30px;
+      font-weight: 300;
+      line-height: 30px;
+      font-size: 16px;
+      text-align: justify;
+      border-radius: 15px;
+      background: linear-gradient(180deg, $primary-color 0%, $third-color 100%);
+      box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 
-    .container-setup{
-        margin: 10px;
-        padding: 25px;
-        border-radius: 5px;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        display: grid;
-        align-content: center;
+      .title {
+        color: $secondary-color;
+        font-family: $roboto;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 25px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
 
-        @media screen and (max-width: 767px) {
-            margin: 10px auto;
-        }
+      .hard-skills-icons {
+        max-width: 960px;
 
         img {
-            height: 50px;
-            margin: 0 15px;
+          max-height: 80px;
+          margin: 15px;
+        }
+      }
+
+      #soft-skills {
+        font-family: $roboto;
+
+        p {
+          color: #4d4d4d;
         }
 
-        h3 {
-            font-size: 20px;
+        #info-soft-skills {
+          margin: 50px auto;
         }
 
+        #list-soft-skills {
+          div {
+            margin: 10px auto;
 
-        @media screen and (max-width: 767px){
-            .info-panel {
-                margin: 10px auto;
+            img {
+              height: 60px;
+              margin-bottom: 15px;
             }
+
+            p {
+              font-weight: 600;
+            }
+          }
         }
+      }
     }
+  }
 }
 
+#setup {
+  font-family: $roboto;
+  max-width: 960px;
+  margin: 50px auto;
+  color: $secondary-color;
+
+  @media screen and (max-width: 1300px) {
+    max-width: 90%;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h2,
+  h3,
+  p {
+    margin: 0;
+  }
+
+  .container-setup {
+    margin: 10px;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    display: grid;
+    align-content: center;
+
+    @media screen and (max-width: 767px) {
+      margin: 10px auto;
+    }
+
+    img {
+      height: 50px;
+      margin: 0 15px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 767px) {
+      .info-panel {
+        margin: 10px auto;
+      }
+    }
+  }
+}
