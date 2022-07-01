@@ -53,6 +53,10 @@ body {
 
     @media screen and (max-width: 768px) {
         width: 80%;
+
+        button {
+            border: 2px solid #4D4D4D;
+        }
     }
 
     img {
@@ -61,6 +65,15 @@ body {
 
     a {
         text-decoration: none;
+        color: white;
+        transition: all .5s ease-in-out;
+        font-size: 100%;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: $secondary-color;
+        font-size: 110%;
     }
 
     .item-container {
@@ -69,10 +82,10 @@ body {
         @media screen and (min-width: 992px){
             display: flex;
             justify-content: flex-end;
-            }
+        }
 
         .item-list {
-            gap: 10px;
+            gap: 20px;
         }
     }
 }
@@ -166,7 +179,7 @@ body {
             }
 
             h2 {
-                font-size: 20px;
+                font-size: 25px;
             }
         }
     }
@@ -197,9 +210,8 @@ body {
                 color: $secondary-color;
                 font-family: $roboto;
                 text-align: center;
-                font-size: medium;
                 margin-bottom: 20px;
-                font-size: 20px;
+                font-size: 25px;
                 font-weight: 600;
                 text-transform: uppercase;
             }
@@ -243,19 +255,34 @@ body {
 }
 
 #setup  {
+    font-family: $roboto;
     max-width: 960px;
     margin: 50px auto;
+    color: $secondary-color;
 
     @media screen and (max-width: 1300px) {
         max-width: 90%;
     }
 
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h2, h3, p {
+        margin: 0;
+    }
+
     .container-setup{
         margin: 10px;
+        padding: 25px;
+        border-radius: 5px;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        display: grid;
+        align-content: center;
 
         @media screen and (max-width: 767px) {
-            margin: auto;
+            margin: 10px auto;
         }
 
         img {
@@ -263,17 +290,14 @@ body {
             margin: 0 15px;
         }
 
-        .vertical-center-margin {
-            margin: 20px;
+        h3 {
+            font-size: 20px;
         }
 
-        #first-environment {
-            @media screen and (max-width: 767px){
-                margin: 15px auto;
 
-                div {
-                    margin: 5px 0;
-                }
+        @media screen and (max-width: 767px){
+            .info-panel {
+                margin: 10px auto;
             }
         }
     }

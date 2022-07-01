@@ -132,7 +132,7 @@ const Tabs = () => {
                             {currentTab === `${tab.id}`
                             &&
                             <>
-                                <h3 className='title'> {tab.title}</h3>
+                                <h2 className='title'> {tab.title}</h2>
                                 {tab.content}
                             </>
                             }

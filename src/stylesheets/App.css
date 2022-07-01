@@ -46,12 +46,23 @@ body {
   #navbar {
     width: 80%;
   }
+  #navbar button {
+    border: 2px solid #4D4D4D;
+  }
 }
 #navbar img {
   padding: 0;
 }
 #navbar a {
   text-decoration: none;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  font-size: 100%;
+}
+#navbar a:hover {
+  text-decoration: none;
+  color: #4D4D4D;
+  font-size: 110%;
 }
 #navbar .item-container {
   text-align: right !important;
@@ -63,7 +74,7 @@ body {
   }
 }
 #navbar .item-container .item-list {
-  gap: 10px;
+  gap: 20px;
 }
 
 #hero {
@@ -144,7 +155,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 .tab-container .tabs button h2 {
-  font-size: 20px;
+  font-size: 25px;
 }
 .tab-container .behind-tab-content {
   margin: 10px;
@@ -171,9 +182,8 @@ body {
   color: #4D4D4D;
   font-family: Roboto, sans-serif;
   text-align: center;
-  font-size: medium;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -205,36 +215,45 @@ body {
 }
 
 #setup {
+  font-family: Roboto, sans-serif;
   max-width: 960px;
   margin: 50px auto;
+  color: #4D4D4D;
 }
 @media screen and (max-width: 1300px) {
   #setup {
     max-width: 90%;
   }
 }
+#setup h2 {
+  font-size: 25px;
+}
+#setup h2, #setup h3, #setup p {
+  margin: 0;
+}
 #setup .container-setup {
   margin: 10px;
+  padding: 25px;
+  border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  display: grid;
+  align-content: center;
 }
 @media screen and (max-width: 767px) {
   #setup .container-setup {
-    margin: auto;
+    margin: 10px auto;
   }
 }
 #setup .container-setup img {
   height: 50px;
   margin: 0 15px;
 }
-#setup .container-setup .vertical-center-margin {
-  margin: 20px;
+#setup .container-setup h3 {
+  font-size: 20px;
 }
 @media screen and (max-width: 767px) {
-  #setup .container-setup #first-environment {
-    margin: 15px auto;
-  }
-  #setup .container-setup #first-environment div {
-    margin: 5px 0;
+  #setup .container-setup .info-panel {
+    margin: 10px auto;
   }
 }
 
