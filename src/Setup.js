@@ -4,7 +4,7 @@ class Setup extends React.Component {
   render() {
     return (
       <div id="setup">
-        <div className="row">
+        <div className="first-row row">
           <div className="container-setup col">
             <p>
               Pour se sentir bien dans ses chaussures.... ou plutôt dans son code, il faut un poste
@@ -18,34 +18,85 @@ class Setup extends React.Component {
               <div className="info-panel col-xs-12 col-md-6 col-lg-6 text-nowrap">
                 <p>
                   Système:
-                  <img src="assets/img/windows.svg" title="Windows" alt="icone windows" />
-                  <img alt="icone mac os" title="Mac OS" src="assets/img/mac.svg" />
+                  <a href="https://www.microsoft.com/fr-fr/windows?r=1" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/img/windows.svg" title="Windows" alt="icone windows" />
+                  </a>
+                  <a href="https://www.apple.com/fr/macos/monterey/" target="_blank" rel="noopener noreferrer">
+                    <img alt="icone mac os" title="Mac OS" src="assets/img/mac.svg" />
+                  </a>
                 </p>
               </div>
 
               <div className="info-panel col-xs-12 col-md-6 col-lg-6 text-nowrap">
                 <p>
                   Editeur de code:
-                  <img
-                    alt="icone visual studio code"
-                    title="Visual Studio Code"
-                    src="assets/img/visual-studio-code.svg"
-                  />
+                  <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">
+                    <img
+                      alt="icone visual studio code"
+                      title="Visual Studio Code"
+                      src="assets/img/visual-studio-code.svg"
+                    />
+                  </a>
                 </p>
               </div>
             </div>
 
-            <div>
+            <div className="mt-xs-2 mt-md-4 mt-lg-4">
               <h3> Les outils qui donnent un petit plus :</h3>
-              <p></p>
+              <div className="more-tools d-flex flex-row flex-wrap mt-4 ">
+                <div>
+                  <a href="https://www.notion.so/fr-fr" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/img/notion.svg" alt="icone notion" />
+                  </a>
+                  <p>Notion</p>
+                </div>
+
+                <div>
+                  <a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/img/figma.svg" alt="icone figma" />
+                  </a>
+                  <p>Figma</p>
+                </div>
+
+                <div>
+                  <a
+                    href="https://apps.apple.com/fr/app/amphetamine/id937984704?mt=12"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="assets/img/amphetamine.png" alt="icone amphetamine" />
+                  </a>
+                  <p>Amphetamine</p>
+                </div>
+
+                <div>
+                  <a href="https://iterm2.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/img/iterm.svg" alt="icone iterm" />
+                  </a>
+                  <p>iTerm</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div id="third-panel" className="row">
           <div className="container-setup col">
-            <h2>Matériel</h2>
-            <p></p>
+            <h2 className='mb-4'>Matériel</h2>
+            <div className='computer d-grid gap-3'>
+              <div className='d-flex flex-column'>
+                <h3 className='third-panel-title'>Ordinateur :</h3>
+                <span>Processeur: Ryzen 7 5800X </span>
+                <span>Carte graphique: KFA2 RTX 2060 Super</span>
+                <span>Mémoire RAM: Corsair Vengeance Pro SL 2x16go 3200MHz</span>
+                <span>Carte Mère: MSI MAG B550 Tomahawk</span>
+              </div>
+
+              <div className='d-flex flex-column'>
+                <h3 className='third-panel-title'>Ordinateur portable :</h3>
+                <span>Macbook Pro 14" M1 Pro</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
