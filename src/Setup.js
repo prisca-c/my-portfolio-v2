@@ -4,7 +4,9 @@ class Setup extends React.Component {
   render() {
     return (
       <div id="setup">
+
         <div id='first-row' className="row">
+
           <div id='first-panel' className="container-setup col">
             <p>
               Pour se sentir bien dans ses chaussures.... ou plutôt dans son code, il faut un poste
@@ -39,6 +41,7 @@ class Setup extends React.Component {
                   </a>
                 </p>
               </div>
+
             </div>
 
             <div className="mt-xs-2 mt-md-4 mt-lg-4">
@@ -75,30 +78,57 @@ class Setup extends React.Component {
                   </a>
                   <p>iTerm</p>
                 </div>
+
               </div>
             </div>
           </div>
         </div>
 
-        <div id="third-panel" className="row">
-          <div className="container-setup col">
-            <h2 className='mb-4'>Matériel</h2>
-            <div className='computer d-grid gap-3'>
+        <div id='second-row' className="row">
+          
+          <div id="third-panel" className="container-setup col">
+            <h2 className='mb-4'>Informatique</h2>
+            <div className='d-grid gap-3'>
               <div className='d-flex flex-column'>
-                <h3 className='third-panel-title'>Ordinateur :</h3>
+                <h3 className='third-panel-title'>Ordinateur fixe:</h3>
                 <span>Processeur: Ryzen 7 5800X </span>
                 <span>Carte graphique: KFA2 RTX 2060 Super</span>
                 <span>Mémoire RAM: Corsair Vengeance Pro SL 2x16go 3200MHz</span>
                 <span>Carte Mère: MSI MAG B550 Tomahawk</span>
               </div>
-
               <div className='d-flex flex-column'>
                 <h3 className='third-panel-title'>Ordinateur portable :</h3>
                 <span>Macbook Pro 14" M1 Pro</span>
               </div>
             </div>
           </div>
+
+          <div id='fourth-panel' className='container-setup col-xs-12 col-md-7 col-lg-7'>
+                  <h2 className='mb-4'>Accessoires</h2>
+                  <div className='d-flex flex-row gap-4'>
+
+                    <p className='d-flex flex-column gap-1'>
+                      <span>Écran 1: <b>Koorui 27" 2K 144hz</b> </span>
+                      <span>Écran 2: <b>Huawei 24"</b></span>
+                      <span>Clavier: <b>Keychron K3 v2</b></span>
+                      <span>Souris 1: <b>G502 Hero</b></span>
+                      <span>Souris 2: <b>Trackpad</b></span>
+                    </p>
+
+                    <p className='d-flex flex-column gap-1'>
+                      <span>Micro: <b>Rode PodMic</b></span>
+                      <span>Bras Micro: <b>Rode PSA-1</b></span>
+                      <span>Table de mixage: <b>GO XLR Mini</b></span>
+                      <span><b>Stream Deck</b></span>
+                      <span><b>Xiaomi Lightbar</b></span>
+                      <span>Mouse Bungee: <b>xTrfy</b></span>
+                      <span><b>Nulaxy Stand for Macbook</b></span>
+                    </p>
+                  </div>
+          </div>
+
         </div>
+
       </div>
     );
   }

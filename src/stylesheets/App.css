@@ -259,7 +259,6 @@ body {
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   display: grid;
-  align-content: center;
 }
 #setup .container-setup img {
   height: 50px;
@@ -281,6 +280,9 @@ body {
     gap: 15px;
   }
 }
+#setup #first-row #first-panel {
+  align-items: center;
+}
 #setup #first-row #second-panel .more-tools {
   gap: 30px;
 }
@@ -299,13 +301,17 @@ body {
     justify-content: center;
   }
   #setup #first-row #second-panel .more-tools div {
-    display: grid;
     justify-items: center;
     margin: 10px;
     width: 100px !important;
   }
 }
-#setup #third-panel .third-panel-title {
+@media screen and (max-width: 867px) {
+  #setup #second-row {
+    gap: 15px;
+  }
+}
+#setup #second-row #third-panel .third-panel-title {
   font-size: 18px;
   font-weight: 700;
 }

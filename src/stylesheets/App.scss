@@ -305,7 +305,6 @@ body {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     display: grid;
-    align-content: center;
 
     img {
       height: 50px;
@@ -333,6 +332,7 @@ body {
     }
 
     #first-panel {
+      align-items: center;
     }
   
     #second-panel {
@@ -358,7 +358,6 @@ body {
           justify-content: center;
   
           div {
-            display: grid;
             justify-items: center;
             margin: 10px;
             width: 100px !important;
@@ -368,14 +367,23 @@ body {
     }
 
   }
+  
+  #second-row {
+    @media screen and (max-width: 867px) {
+      gap: 15px;
+    }
 
-  #third-panel {
-    .third-panel-title {
-      font-size: 18px;
-      font-weight: 700;
+    #third-panel {
+      .third-panel-title {
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+
+    #fourth-panel {
+
     }
   }
-
   @media screen and (max-width: 1300px) {
     max-width: 90%;
   }
