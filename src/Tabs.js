@@ -45,18 +45,12 @@ const Tabs = () => {
                 title="After Effect"
                 src="assets/img/after-effects.svg"
               />
-            </div>
-
-            <div>
               <img alt="icone HTML" title="HTML" src="assets/img/iconehtml.png" />
               <img alt="icone CSS" title="CSS" src="assets/img/iconecss.png" />
               <img alt="icone JavaScript" title="JavaScript" src="assets/img/javascript.svg" />
               <img alt="icone sass" title="Sass" src="assets/img/sass.svg" />
               <img alt="icone react" title="React" src="assets/img/react.svg" />
               <img alt="icone bootstrap" title="Bootstrap" src="assets/img/bootstrap.svg" />
-            </div>
-
-            <div>
               <img alt="icone wordpress" title="Wordpress" src="assets/img/wordpress.svg" />
               <img alt="icone elementor" title="Elementor" src="assets/img/elementor.svg" />
               <img alt="icone php" title="PHP" src="assets/img/php.svg" />

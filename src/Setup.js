@@ -4,8 +4,8 @@ class Setup extends React.Component {
   render() {
     return (
       <div id="setup">
-        <div className="first-row row">
-          <div className="container-setup col">
+        <div id='first-row' className="row">
+          <div id='first-panel' className="container-setup col">
             <p>
               Pour se sentir bien dans ses chaussures.... ou plutôt dans son code, il faut un poste
               de travail approprié !
