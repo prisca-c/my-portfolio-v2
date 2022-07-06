@@ -305,6 +305,7 @@ body {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     display: grid;
+    background: linear-gradient(180deg, $primary-color 0%, $third-color 100%);
 
     img {
       height: 50px;
@@ -331,6 +332,10 @@ body {
       gap: 15px;
     }
 
+    @media screen and (max-width: 767px) {
+      gap: 0px;
+    }
+
     #first-panel {
       align-items: center;
     }
@@ -355,12 +360,10 @@ body {
       @media screen and (max-width: 867px) {
         .more-tools {
           gap: 40px;
-          justify-content: center;
+          flex-wrap: wrap;
   
           div {
-            justify-items: center;
             margin: 10px;
-            width: 100px !important;
           }
         }
       }
@@ -371,6 +374,10 @@ body {
   #second-row {
     @media screen and (max-width: 867px) {
       gap: 15px;
+    }
+
+    @media screen and (max-width: 767px) {
+      gap: 0px;
     }
 
     #third-panel {

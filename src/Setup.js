@@ -91,10 +91,10 @@ class Setup extends React.Component {
             <div className='d-grid gap-3'>
               <div className='d-flex flex-column'>
                 <h3 className='third-panel-title'>Ordinateur fixe:</h3>
-                <span>Processeur: Ryzen 7 5800X </span>
-                <span>Carte graphique: KFA2 RTX 2060 Super</span>
-                <span>Mémoire RAM: Corsair Vengeance Pro SL 2x16go 3200MHz</span>
-                <span>Carte Mère: MSI MAG B550 Tomahawk</span>
+                <span>Processeur: <b>Ryzen 7 5800X</b> </span>
+                <span>Carte graphique: <b>KFA2 RTX 2060 Super</b></span>
+                <span>Mémoire RAM: <b>Corsair Vengeance Pro SL 2x16go 3200MHz</b></span>
+                <span>Carte Mère: <b>MSI MAG B550 Tomahawk</b></span>
               </div>
               <div className='d-flex flex-column'>
                 <h3 className='third-panel-title'>Ordinateur portable :</h3>
@@ -103,28 +103,29 @@ class Setup extends React.Component {
             </div>
           </div>
 
-          <div id='fourth-panel' className='container-setup col-xs-12 col-md-7 col-lg-7'>
-                  <h2 className='mb-4'>Accessoires</h2>
-                  <div className='d-flex flex-row gap-4'>
+          <div id='fourth-panel' className='container-setup col-xs-12 col-md-6 col-lg-6'>
+            <h2 className='mb-4'>Accessoires</h2>
+            
+            <div className='d-flex flex-row gap-4'>
 
-                    <p className='d-flex flex-column gap-1'>
-                      <span>Écran 1: <b>Koorui 27" 2K 144hz</b> </span>
-                      <span>Écran 2: <b>Huawei 24"</b></span>
-                      <span>Clavier: <b>Keychron K3 v2</b></span>
-                      <span>Souris 1: <b>G502 Hero</b></span>
-                      <span>Souris 2: <b>Trackpad</b></span>
-                    </p>
+              <p className='d-flex flex-column gap-1'>
+                <span>Écran 1: <b>Koorui 27" 2K 144hz</b> </span>
+                <span>Écran 2: <b>Huawei 24"</b></span>
+                <span>Clavier: <b>Keychron K3 v2</b></span>
+                <span>Souris 1: <b>G502 Hero</b></span>
+                <span>Souris 2: <b>Trackpad</b></span>
+              </p>
 
-                    <p className='d-flex flex-column gap-1'>
-                      <span>Micro: <b>Rode PodMic</b></span>
-                      <span>Bras Micro: <b>Rode PSA-1</b></span>
-                      <span>Table de mixage: <b>GO XLR Mini</b></span>
-                      <span><b>Stream Deck</b></span>
-                      <span><b>Xiaomi Lightbar</b></span>
-                      <span>Mouse Bungee: <b>xTrfy</b></span>
-                      <span><b>Nulaxy Stand for Macbook</b></span>
-                    </p>
-                  </div>
+              <p className='d-flex flex-column gap-1'>
+                <span>Micro: <b>Rode PodMic</b></span>
+                <span>Bras Micro: <b>Rode PSA-1</b></span>
+                <span>Table de mixage: <b>GO XLR Mini</b></span>
+                <span><b>Stream Deck</b></span>
+                <span><b>Xiaomi Lightbar</b></span>
+                <span>Mouse Bungee: <b>xTrfy</b></span>
+                <span><b>Nulaxy Stand for Macbook</b></span>
+              </p>
+            </div>
           </div>
 
         </div>
