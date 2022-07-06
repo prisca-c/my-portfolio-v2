@@ -9,6 +9,8 @@ import Hero from './Hero';
 import Tabs from './Tabs';
 import Setup from './Setup';
 
+import ListTabs from './ListInfos';
+
 const App = () => {
   return (
     <>
@@ -16,7 +18,7 @@ const App = () => {
         <ThemeProvider breakpoints={['lg', 'md', 'sm', 'xs']}>
           <GetHeader />
           <Hero />
-          <Tabs />
+          <Tabs Tabs={ListTabs}/>
           <Setup />
         </ThemeProvider>
       </React.StrictMode>
