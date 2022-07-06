@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
 import App from './App';
-import Tabs from './Tabs';
+import Tabs from './components/Tabs';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

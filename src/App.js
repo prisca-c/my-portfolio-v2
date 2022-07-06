@@ -4,12 +4,12 @@ import './stylesheets/App.css';
 import { ThemeProvider } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import GetHeader from './Header';
-import Hero from './Hero';
-import Tabs from './Tabs';
-import Setup from './Setup';
+import GetHeader from './components/Header';
+import Hero from './components/Hero';
+import Tabs from './components/Tabs';
+import Setup from './components/Setup';
 
-import ListTabs from './ListInfos';
+import ListTabs from './components/ListInfos';
 
 const App = () => {
   return (
