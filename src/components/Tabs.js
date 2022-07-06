@@ -9,7 +9,7 @@ const Tabs = ({Tabs}) => {
   };
 
   return (
-    <div id="skills" className="tab-container">
+    <div className="tab-container">
       <div className="tabs">
         {Tabs.map((tab, i) => (
           <button

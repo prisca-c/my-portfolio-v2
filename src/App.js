@@ -8,6 +8,7 @@ import GetHeader from './components/Header';
 import Hero from './components/Hero';
 import Tabs from './components/Tabs';
 import Setup from './components/Setup';
+import ContactForm from './components/ContactForm';
 
 import ListTabs from './components/ListInfos';
 
@@ -20,6 +21,7 @@ const App = () => {
           <Hero />
           <Tabs Tabs={ListTabs}/>
           <Setup />
+          <ContactForm />
         </ThemeProvider>
       </React.StrictMode>
     </>
